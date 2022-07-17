@@ -1,0 +1,38 @@
+/* === media queries === */
+
+@media screen and (max-width: 870px){
+    .showcase-area .container{
+        grid-template-columns: 1fr;
+    }
+    .container{
+        width: 100%;
+        padding: 0rem 1.5rem;
+    }
+    .big-title{
+        margin-top: var(--mb-1);
+        font-size: var(--normal-font-size);
+    }
+    .links .btn , .cta{
+        font-size: var(--small-font-size);
+        padding: .5rem 1.3rem;
+    }
+    a:not([class="btn"]){
+        display: none;
+    }
+    .right-heading span{
+        font-size: var(--normal-font-size);
+        margin-top: var(--mb-1);
+        padding: .2rem .5rem;
+    }
+    .category-list> .list-right-side > a{
+        display: inline-block;
+    }
+    .heading span{
+        font-size: var(--small-font-size);
+        padding: .2rem .7rem;
+        border-radius: .3rem;
+    }
+    .settings-heading{
+        font-size: var(--normal-font-size);
+    }
+}
