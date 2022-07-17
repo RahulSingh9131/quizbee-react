@@ -1,0 +1,40 @@
+.showcase-area-settings{
+    text-align: center;
+}
+section .heading{
+    text-align: center;
+    padding: 2.5rem 0;
+}
+.heading span{
+    font-size: var(--big-font-size);
+    color: var(--primary-dark);
+    background: var(--simple);
+    padding: .2rem 1rem;
+    border-radius: .5rem;
+    font-weight: 700;
+    margin: 0 var(--mb-0-25);
+}
+.button-container{
+    width: 100%;
+    max-width: 30rem;
+    margin: var(--mb-1) auto;
+}
+.button-container button{
+    width: 100%;
+    padding: 10px;
+    color: var(--white-color);
+    background-color: var(--primary-dark);
+    border: none;
+    cursor: pointer;
+    box-shadow: var(--box-shadow);
+}
+.textfield-comp{
+    width: 100%;
+    max-width: 30rem;
+    margin: var(--mb-0-75) auto;
+}
+.textfield-comp input{
+    width: 100%;
+    padding: 5px;
+    margin-bottom: var(--mb-0-25);
+}

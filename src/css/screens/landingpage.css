@@ -1,0 +1,142 @@
+/*  ==== css for landing page === */
+
+.big-wrapper{
+    padding: 1.7rem 0 2rem;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.container{
+    max-width: 81rem;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 3rem;
+}
+header .container{
+    position: relative;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo>h3{
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-semi-bold);
+}
+.logo img{
+    width: 50px;
+    margin-right: .6rem;
+}
+.links >ul{
+    display: flex;
+    align-items: center;
+}
+.links a{
+    color: var(--text-color) ;
+    margin-left: 4.5rem;
+    display: inline-block;
+    transition: .1s;
+}
+.links a:hover{
+    color: var(--primary-dark);
+    transform: scale(1.05);
+}
+
+
+.showcase-area .container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    align-items: center;
+}
+.big-title{
+    font-size: var(--h2-font-size);
+    color: var(--text-color);
+    text-transform: capitalize;
+    line-height: 1.4;
+}
+.text{
+    color: var(--text-color-light);
+    font-size: var(--normal-font-size);
+    margin: 1.9rem 0 2rem;
+    max-width: 550px;
+    line-height: 1.7;
+}
+.enter-btn{
+    color: #fff;
+    background-color: var(--primary-dark);
+    border: none;
+    cursor: pointer;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    padding: 1rem 1.3rem;
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+    transition: .3s;
+}
+.enter-btn:hover{
+    background-color: var(--primary-darker);
+    transform: scale(1) !important;
+}
+
+/* css for right side of landing page */
+
+.right-side{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.right-heading{
+    text-align: center;
+    padding: 2rem 0;
+    margin-bottom: var(--mb-1);
+}
+.right-heading span{
+    font-size: var(--h1-font-size);
+    color: var(--primary-darker);
+    background: var(--simple);
+    padding: .2rem .7rem;
+    border-radius: .5rem;
+    margin: 0 var(--mb-0-25);
+    font-weight: var(--font-bold);
+}
+.category-list{
+    display: flex;
+    align-items: center;
+    padding: .5rem .7rem;
+    margin-bottom: var(--mb-0-75);
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+}
+.category-list:hover{
+    cursor: pointer;
+}
+.category-list .list-right-side{
+    margin-left: var(--mb-2);
+}
+.category-list i{
+    color: var(--primary-dark);
+    font-size: var(--big-font-size);
+}
+.category-btn{
+    color: var(--primary-dark);
+    font-weight: var(--font-bold);
+}
+
+.bottom-area{
+    text-align: center;
+    margin-top: var(--mb-1);
+}
+.bottom-area p{
+    color: var(--text-color-light) ;
+}
+.bottom-area  small{
+    color: var(--text-color-light);
+}

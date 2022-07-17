@@ -1,0 +1,11 @@
+.select-field{
+    margin-top: var(--mb-1);
+    width: 100%;
+    max-width: 30rem;
+    margin: 0 auto;
+}
+.select-field select{
+    width: 100%;
+    padding: 5px;
+    margin-bottom: var(--mb-0-25);
+}
