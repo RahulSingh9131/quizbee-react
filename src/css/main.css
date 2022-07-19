@@ -3,5 +3,6 @@
 @import url('./screens/landingpage.css');
 @import url('./screens/settingspage.css');
 @import url('./screens/selectfield.css');
+@import url('./screens/questions.css');
 
 @import url('./mediaQueries.css');

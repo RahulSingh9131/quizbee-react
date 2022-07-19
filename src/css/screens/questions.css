@@ -1,0 +1,29 @@
+.section .heading h1{
+    font-size: var(--h1-font-size);
+}
+.quiz-box-container{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+.quiz-box{
+    max-width: 85vw;
+    background-color: var(--white-color);
+    border-radius: .8rem;
+    box-shadow: var(--box-shadow);
+    padding: 1rem .7rem;
+    width: 30rem;
+    margin-bottom: var(--mb-1);
+}
+.quiz-option-list{
+    margin-top: var(--mb-1);
+}
+.quiz-option-list .option{
+    background-color: var(--body-color);
+    margin-bottom: var(--mb-0-5);
+    padding: .5rem;
+    width: 100%;
+    cursor: pointer;
+    border: none;
+}
