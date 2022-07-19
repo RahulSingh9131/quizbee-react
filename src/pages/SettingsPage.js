@@ -1,4 +1,5 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import SelectField from '../components/SelectField';
@@ -11,6 +12,7 @@ import useDocumentTitle from '../hooks/useDocumentTitle';
 const SettingsPage = () => {
     const {response,loading,error}=useAxios({url: "/api_category.php"})
     useDocumentTitle("settingsPage");
+    const navigate=useNavigate();
 
     if(loading){
         return (
@@ -39,6 +41,11 @@ const SettingsPage = () => {
         {id:"boolean",name:"True/False"},
     ]
 
+    const handleSubmit=(e)=>{
+        e.preventDefault();
+        navigate("/questions");
+    }
+
   return (
     <main>
         <div className='big-wrapper'>
@@ -52,7 +59,7 @@ const SettingsPage = () => {
                         <span>Z</span>
                     </div>
                     <h3 className="settings-heading">Choose from the options below.</h3>
-                    <form onSubmit={(e)=>e.preventDefault()}>
+                    <form onSubmit={handleSubmit}>
                         <SelectField options={response?.trivia_categories} label="Category"/>
                         <SelectField options={difficultyOptions} label="Difficulty"/>
                         <SelectField options={typeOptions} label="Type"/>

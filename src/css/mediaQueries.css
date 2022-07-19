@@ -16,6 +16,13 @@
         font-size: var(--small-font-size);
         padding: .5rem 1.3rem;
     }
+    .cta :link{
+        display: inline-block;
+    }
+    .cta button{
+        padding: .5rem .7rem;
+        margin-left: -1rem;
+    }
     a:not([class="btn"]){
         display: none;
     }
