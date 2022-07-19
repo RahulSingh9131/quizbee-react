@@ -76,7 +76,6 @@ const QuestionPage = () => {
             navigate("/scorepage");
         }
     }
-    console.log(score);
 
   return (
     <main>
