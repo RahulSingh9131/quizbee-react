@@ -28,5 +28,8 @@
 
 ******************
 <h3>Some Preview Images</h3>
-![quiz-home](https://user-images.githubusercontent.com/87935709/179969912-78cfff08-11c7-4c44-91b2-eda2263b0345.JPG)
-![quiz-questions](https://user-images.githubusercontent.com/87935709/179969955-74c91e80-6b3b-45c7-8a97-b66b4d88ba71.JPG)
+
+
+![quiz-home](https://user-images.githubusercontent.com/87935709/179970193-84ff82d6-f7bf-4b03-8d00-398e4ce1f4a1.JPG)
+![quiz-questions](https://user-images.githubusercontent.com/87935709/179970254-48e5ea8a-1489-40b4-a95f-f89056995253.JPG)
+
