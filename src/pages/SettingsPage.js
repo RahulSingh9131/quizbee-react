@@ -43,7 +43,7 @@ const SettingsPage = () => {
 
     const handleSubmit=(e)=>{
         e.preventDefault();
-        navigate("/questions");
+        navigate("/rules");
     }
 
   return (

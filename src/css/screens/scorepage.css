@@ -1,0 +1,21 @@
+.score-box-container{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+.score-box-container > h2,h4{
+    font-weight: var(--font-semi-bold);
+    text-align: center;
+}
+.score-btn{
+    padding: 1rem 1.5rem;
+    font-size: var(--normal-font-size);
+    color: var(--white-color);
+    max-width: 15rem;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    cursor: pointer;
+    border: none;
+    background-color: var(--primary);
+}
