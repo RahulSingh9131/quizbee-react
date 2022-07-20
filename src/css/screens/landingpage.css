@@ -129,6 +129,11 @@ header .container{
     color: var(--primary-dark);
     font-weight: var(--font-bold);
 }
+.logout-btn{
+    border: none;
+    margin-left: 4.5rem;
+    cursor: pointer;
+}
 
 .bottom-area{
     text-align: center;

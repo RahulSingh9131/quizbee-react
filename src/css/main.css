@@ -6,5 +6,7 @@
 @import url('./screens/questions.css');
 @import url('./screens/scorepage.css');
 @import url('./screens/rules.css');
+@import url('./screens/login.css');
+@import url('./screens/signup.css');
 
 @import url('./mediaQueries.css');

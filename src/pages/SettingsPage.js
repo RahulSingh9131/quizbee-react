@@ -1,10 +1,12 @@
 import React from 'react'
+import { useAuthState } from 'react-firebase-hooks/auth';
 import { useNavigate } from 'react-router-dom';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import SelectField from '../components/SelectField';
 import TextFieldComp from '../components/TextFieldComp';
 import "../css/main.css";
+import { auth } from '../firebase';
 import useAxios from '../hooks/useAxios';
 import useDocumentTitle from '../hooks/useDocumentTitle';
 
@@ -13,6 +15,7 @@ const SettingsPage = () => {
     const {response,loading,error}=useAxios({url: "/api_category.php"})
     useDocumentTitle("settingsPage");
     const navigate=useNavigate();
+    const [user]=useAuthState(auth);
 
     if(loading){
         return (
@@ -43,7 +46,12 @@ const SettingsPage = () => {
 
     const handleSubmit=(e)=>{
         e.preventDefault();
-        navigate("/rules");
+        if(!user){
+            navigate("/loginPage")
+        }else{
+            navigate("/rules");
+        }
+    
     }
 
   return (
